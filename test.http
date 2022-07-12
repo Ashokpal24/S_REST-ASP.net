@@ -1,0 +1,38 @@
+#get item (read)
+GET https://localhost:7282/api/Superhero
+
+#get specific item
+GET https://localhost:7282/api/Superhero/5
+
+#create
+POST https://localhost:7282/api/Superhero
+Content-Type: application/json
+
+
+{
+    "id":4,
+    "name":"Flash"
+}
+
+#create
+POST https://localhost:7282/api/Superhero
+Content-Type: application/json
+
+
+{
+    "id":5,
+    "name":"Strange"
+}
+
+#update
+PUT  https://localhost:7282/api/Superhero
+Content-Type: application/json
+
+
+{
+    "id":4,
+    "name":"Flash"
+}
+
+#delete 
+DELETE  https://localhost:7282/api/Superhero/5
